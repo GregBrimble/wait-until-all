@@ -1,10 +1,14 @@
 {
+  "name": "wait-until-all",
+  "version": "1.0.0",
   "main": "dist/index.js",
   "scripts": {
     "test": "jest",
     "test:watch": "npm run test -- --watch",
     "build": "tsc --outDir dist/",
     "build:watch": "npm run build -- --watch",
+    "clean": "rimraf dist/",
+    "clean:node": "rimraf package-lock.json node_modules/",
     "lint": "prettier -c 'src/**/*.ts'",
     "lint:fix": "npm run lint -- --write",
     "prestart": "npm run build",
@@ -19,9 +23,11 @@
   "devDependencies": {
     "@types/jest": "25.2.1",
     "@types/node": "13.13.5",
+    "cross-fetch": "3.0.4",
     "jest": "26.0.1",
     "npm-check-updates": "4.1.2",
     "prettier": "2.0.5",
+    "rimraf": "3.0.2",
     "ts-jest": "25.5.0",
     "typescript": "3.8.3"
   }

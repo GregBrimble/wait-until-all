@@ -2,6 +2,13 @@
   "compilerOptions": {
     "rootDir": "src",
     "esModuleInterop": true,
-    "resolveJsonModule": true
-  }
+    "skipLibCheck": true,
+    "target": "ES6"
+  },
+  "exclude": [
+    "node_modules/**",
+    "dist",
+    "src/**/*.test.ts",
+    "src/**/*.testhelpers.ts"
+  ]
 }
