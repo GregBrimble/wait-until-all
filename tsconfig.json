@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "rootDir": "src",
+    "esModuleInterop": true,
+    "resolveJsonModule": true
+  }
+}
